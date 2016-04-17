@@ -1,0 +1,18 @@
+name        : dri3proto
+version     : 1.0
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/dri3proto-1.0.tar.gz : e1a0dad3009ecde52c0bf44187df5f95cc9a7cc0e76dfc2f2bbf3e909fe03fa9
+license     :
+    - MIT
+summary     : Direct Rendering Infrastructure 3 Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This extension defines a protocol to securely allow user applications to access the video hardware without requiring data to be passed through the X server.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
